@@ -1,20 +1,23 @@
 import java.util.Scanner;
 
-public class FibonacciSeriesProgram {
+public class TribonacciSeriesProgram {
     public static void main(String[] args) {
-        System.out.println("Java program to print fibonacci series");
-        int term,a=0;
+        System.out.println("java program to print tribonacci series");
+        int a=0;
         int b=1;
-        int c;
+        int c=2;
+        int d,term;
         System.out.println("Enter term");
         Scanner scanner = new Scanner(System.in);
         term = scanner.nextInt();
         for(int i=1;i<=term;i++){
             System.out.println(a);
-            c =a +b;
-            a =b;
-            b = c;
-        }
+            d=a+b+c;
+            a=b;
+            b=c;
+            c=d;
 
+        }
     }
+
 }
